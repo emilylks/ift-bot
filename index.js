@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const config = require('./config.js');
 
 const bot = new Discord.Client();
 
@@ -26,5 +27,5 @@ bot.on('message', (message) => {
   }
 });
 
-
-bot.login('ODEyODg2NTA0MDQwODI0ODUy.YDHRjQ.T8XAH_75YimH6o-LiQH1YH56cVc');
+console.log(config.TOKEN);
+bot.login(config.TOKEN);
